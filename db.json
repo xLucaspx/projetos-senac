@@ -1,0 +1,53 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Baguette",
+			"price": 3.29,
+			"imageUrl": "baguette.png",
+			"imageAlt": "A delicious, freshly baked baguette"
+		},
+		{
+			"id": 2,
+			"name": "Coffee",
+			"price": 2.00,
+			"imageUrl": "coffee.png",
+			"imageAlt": "Invigorating cup of black coffee"
+		},
+		{
+			"id": 3,
+			"name": "Croissant",
+			"price": 8.75,
+			"imageUrl": "croissant.png",
+			"imageAlt": "Croissant, a French delicacy"
+		},
+		{
+			"id": 4,
+			"name": "Pancakes",
+			"price": 7.00,
+			"imageUrl": "pancakes.png",
+			"imageAlt": "Pancakes, a delicious breakfast"
+		},
+		{
+			"id": 5,
+			"name": "Cappuccino",
+			"price": 6.20,
+			"imageUrl": "cappuccino.png",
+			"imageAlt": "A creamy hot cappuccino"
+		},
+		{
+			"id": 6,
+			"name": "Berry Pie",
+			"price": 10.90,
+			"imageUrl": "pie.png",
+			"imageAlt": "Our specialty, freshly baked berry pie"
+		},
+		{
+			"id": 7,
+			"name": "Strawberry Cake",
+			"price": 12.70,
+			"imageUrl": "cake.png",
+			"imageAlt": "A beautiful and sweet piece of strawberry cake"
+		}
+	]
+}

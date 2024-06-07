@@ -1,0 +1,130 @@
+html {
+	font-family: "Pixelify Sans", sans-serif;
+	font-style: normal;
+}
+
+.header {
+	width: 100%;
+	height: 115px;
+	background-image: url("../assets/img/small-banner.jpg");
+	background-position: left;
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+
+.banner__title {
+	font-size: 100px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 4px 7px #8C99CE;
+}
+
+.main__grid__container {
+	display: grid;
+	grid-template-rows: [presentation] 600px repeat(2, auto);
+	grid-template-columns: repeat(12, auto);
+}
+
+.presentation {
+	grid-row: presentation / 2;
+	grid-column: 1 / 13;
+	background-image: url("../assets/img/presentation-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 1rem;
+}
+
+.presentation__title {
+	text-align: center;
+	font-size: 125px;
+	font-weight: 700;
+	text-shadow: 4px 7px #E4A0D6;
+	margin-top: 75px;
+}
+
+.presentation__text {
+	text-align: center;
+	font-size: 80px;
+	font-weight: 500;
+	text-shadow: 4px 5px #BE7695;
+	margin-top: 75px;
+}
+
+.products {
+	grid-row: 2 / 3;
+	grid-column: 1 / 13;
+	background-color: #EACFD5;
+	padding: 2rem 1rem 5rem 1rem;
+}
+
+.products__list {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(4, calc(85vw / 4));
+	justify-content: center;
+	align-items: start;
+	gap: 2rem 1.75rem;
+}
+
+.products__list__item {
+	display: grid;
+	grid-template-rows: [image] 310px [name] 32px [price] 22px;
+	grid-template-columns: calc(85vw / 4);
+	justify-content: center;
+	text-align: center;
+	background-color: #D2A18A;
+	border: 3px solid #BA7A58;
+	border-radius: 5px;
+	box-shadow: 6px 7px 6px rgba(69, 64, 126, 0.75);
+	padding-bottom: 10px;
+	transition: 0.3s ease-out;
+}
+
+.products__list__item:hover {
+	box-shadow: 10px 11px 10px rgba(69, 64, 126, 1);
+	filter: brightness(95%);
+}
+
+.product__list__item__img {
+	grid-row: image;
+	float: left;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 10px;
+}
+
+.product__list__item__name {
+	grid-row: name;
+	font-size: 30px;
+	text-shadow: 3px 2px #E2D8AC;
+}
+
+.product__list__item__price {
+	grid-row: price;
+	font-size: 20px;
+	text-shadow: 3px 2px #E2D8AC;
+}
+
+.footer {
+	grid-row: 3 / 4;
+	grid-column: 1 / 13;
+	text-align: center;
+	background-image: url("../assets/img/footer-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 1rem;
+	height: 425px;
+	position: relative;
+}
+
+.footer__text {
+	font-size: 18px;
+	text-shadow: 3px 2px #8C99CE;
+	background-color: #EACFD5;
+	width: fit-content;
+	margin: 420px auto 0;
+}
