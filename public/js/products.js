@@ -4,8 +4,6 @@
 
 	const productsList = document.querySelector(".products__list");
 
-	console.log(res.products);
-
 	res.products.forEach(product => {
 		const li = document.createElement('li');
 		li.classList.add('products__list__item');

@@ -70,7 +70,6 @@ html {
 .products__list__item {
 	display: grid;
 	grid-template-rows: [image] 310px [name] 32px [price] 22px;
-	grid-template-columns: calc(85vw / 4);
 	justify-content: center;
 	text-align: center;
 	background-color: #D2A18A;
@@ -127,4 +126,38 @@ html {
 	background-color: #EACFD5;
 	width: fit-content;
 	margin: 420px auto 0;
+}
+
+@media screen and (max-width: 780px) {
+	.products__list {
+		grid-template-columns: repeat(2, calc(85vw / 2));
+	}
+
+	.products__list__item {
+		grid-template-rows: [image] 290px [name] 26px [price] 20px;
+	}
+
+	.product__list__item__img {
+		height: 280px;
+	}
+
+	.product__list__item__name {
+		font-size: 24px;
+	}
+
+	.product__list__item__price {
+		font-size: 18px;
+	}
+}
+
+@media screen
+	and (min-width: 781px)
+	and (max-width: 1050px) {
+	.products__list {
+		grid-template-columns: repeat(3, calc(85vw / 3));
+	}
+
+	/* .products__list__item {
+
+	} */
 }

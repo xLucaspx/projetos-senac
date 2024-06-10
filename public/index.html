@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -15,29 +16,94 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
 
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/form.css">
 </head>
+
 <body>
-<header class="header">
-	<div class="banner">
-		<h1 class="banner__title">Pixel Art Bakery</h1>
-	</div>
-</header>
+	<header class="header">
+		<div class="banner">
+			<h1 class="banner__title">Pixel Art Bakery</h1>
+		</div>
+	</header>
 
-<main class="main__grid__container">
-	<section class="presentation">
-		<h2 class="presentation__title">Online menu</h2>
-		<p class="presentation__text">Don't miss our goodies!</p>
-	</section>
+	<main class="main__grid__container">
+		<section class="presentation">
+			<h2 class="presentation__title">Online menu</h2>
+			<p class="presentation__text">Don't miss our goodies!</p>
+		</section>
 
-	<section class="products">
-		<ul class="products__list"></ul>
-	</section>
-</main>
+		<section class="products">
+			<ul class="products__list"></ul>
+		</section>
 
-<footer class="footer">
-	<p class="footer__text">&copy; Pixel Art Bakery / Lucaspx / Senac Tech / June2024</p>
-</footer>
+		<section class="contact">
+			<ul class="contact__links-list">
+				<li class="contact__links-list__item contact__links-list__item--maps">Google Maps</li>
+				<li class="contact__links-list__item contact__links-list__item--whats">WhatsApp</li>
+				<li class="contact__links-list__item contact__links-list__item--insta">Instagram</li>
+				<li class="contact__links-list__item contact__links-list__item--pinterest">Pinterest</li>
+			</ul>
+
+			<form action="" class="contact__form">
+				<legend class="contact__form__legend">Faça seu pedido preenchendo os campos abaixo:</legend>
+
+				<fieldset class="contact__form__fieldset contact__form__fieldset--name">
+					<label for="name" class="form__label">Nome</label>
+					<input type="text" class="form__input" id="name" placeholder="Digite seu nome">
+				</fieldset>
+
+				<fieldset class="contact__form__fieldset contact__form__fieldset--phone">
+					<label for="phone" class="form__label">Telefone</label>
+					<input type="text" class="form__input" id="phone" placeholder="Um número de telefone para contato">
+				</fieldset>
+
+				<fieldset class="contact__form__fieldset--address">
+					<div class="form__div form__div--cep">
+						<label for="cep" class="form__label">CEP</label>
+						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP">
+					</div>
+
+					<div class="form__div form__div--street">
+						<label for="street" class="form__label">Endereço</label>
+						<input type="text" class="form__input form__input--street" id="street"
+							placeholder="Endereço para a entrega">
+					</div>
+
+					<div class="form__div form__div--district">
+						<label for="district" class="form__label">Bairro</label>
+						<input type="text" class="form__input" id="district" placeholder="Informe o bairro">
+					</div>
+
+					<div class="form__div form__div--number">
+						<label for="number" class="form__label">Número</label>
+						<input type="text" class="form__input" id="number" placeholder="Digite o número">
+					</div>
+
+					<div class="form__div form__div--city">
+						<label for="city" class="form__label">Cidade - UF</label>
+						<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF">
+					</div>
+				</fieldset>
+
+				<fieldset class="contact__form__fieldset contact__form__fieldset--order">
+					<label for="order" class="form__label"></label>
+					<textarea class="form__input" name="order" id="order" cols="30" rows="10"
+						placeholder="Digite aqui seu pedido..."></textarea>
+				</fieldset>
+
+				<fieldset class="contact__form__fieldset--btn">
+					<button class="form__button button--submit">Enviar</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="footer__text">&copy; Pixel Art Bakery / Lucaspx / Senac Tech / June2024</p>
+	</footer>
 </body>
 
-<script src="./js/index.js"></script>
+<script src="./js/products.js"></script>
+<script src="./js/address.js"></script>
+
 </html>
