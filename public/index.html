@@ -61,44 +61,45 @@
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--name">
 					<label for="name" class="form__label">Nome</label>
-					<input type="text" class="form__input" id="name" placeholder="Digite seu nome" required>
+					<input type="text" class="form__input" id="name" placeholder="Digite seu nome" required autocomplete="name" minlength="3" maxlength="50">
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--phone">
 					<label for="phone" class="form__label">Telefone</label>
-					<input type="text" class="form__input" id="phone" placeholder="Um número de telefone para contato" required>
+					<input type="tel" class="form__input" id="phone" placeholder="Um número de telefone para contato" required autocomplete="tel" minlength="10" maxlength="25"
+					pattern="^[\(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[\)]? ?(?:[2-8]|9 ?[1-9])[0-9]{3}[\-]? ?[0-9]{4}$">
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset--address">
 					<div class="form__div form__div--cep">
 						<label for="cep" class="form__label">CEP</label>
-						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP" required>
+						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP" required autocomplete="postal-code" minlength="8" maxlength="9"
+						pattern="^[\d]{5}-?[\d]{3}$">
 					</div>
 
 					<div class="form__div form__div--street">
 						<label for="street" class="form__label">Endereço</label>
-						<input type="text" class="form__input form__input--street" id="street" required
-							placeholder="Endereço para a entrega">
+						<input type="text" class="form__input form__input--street" id="street" placeholder="Endereço para a entrega" required autocomplete="address-line1" minlength="5" maxlength="100">
 					</div>
 
 					<div class="form__div form__div--district">
 						<label for="district" class="form__label">Bairro</label>
-						<input type="text" class="form__input" id="district" placeholder="Informe o bairro" required>
+						<input type="text" class="form__input" id="district" placeholder="Informe o bairro" required autocomplete="address-level3" minlength="3" maxlength="50">
 					</div>
 
 					<div class="form__div form__div--number">
 						<label for="number" class="form__label">Número</label>
-						<input type="text" class="form__input" id="number" placeholder="Digite o número">
+						<input type="text" class="form__input" id="number" placeholder="Digite o número" autocomplete="address-line2" maxlength="15">
 					</div>
 
 					<div class="form__div form__div--city">
 						<label for="city" class="form__label">Cidade - UF</label>
-						<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF" required>
+						<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF" required autocomplete="address-level2" minlength="3" maxlength="50">
 					</div>
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--order">
-					<label for="order" class="form__label"></label>
+					<label for="order" class="form__label">Pedido</label>
 					<textarea class="form__input" name="order" id="order" cols="30" rows="10"
 						placeholder="Digite aqui seu pedido..." required></textarea>
 				</fieldset>

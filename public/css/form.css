@@ -135,7 +135,6 @@
 @media screen and (max-width: 1020px) {
 	.contact {
 		grid-template-rows: [links] auto [form] auto;
-		/* grid-template-rows: [links] 200px [form] 515px; */
 		grid-template-columns: 100%;
 	}
 
@@ -147,7 +146,36 @@
 	.contact__form {
 		grid-column: 1 / 2;
 		grid-row:  form / form;
-		grid-template-columns: repeat(4, calc(100% / 4));
+		box-sizing: border-box;
+	}
+
+	.contact__form,
+	.contact__form__fieldset--address {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact__form__fieldset,
+	.contact__form__fieldset--address {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1350px) {
+	.contact {
+		grid-template-rows: [links] auto [form] auto;
+		grid-template-columns: 100%;
+	}
+
+	.contact__links-list {
+		grid-column: 1 / 2;
+		grid-row: links / form;
+	}
+
+	.contact__form {
+		grid-column: 1 / 2;
+		grid-row:  form / form;
 		box-sizing: border-box;
 	}
 }
