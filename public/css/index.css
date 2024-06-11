@@ -21,12 +21,12 @@ html {
 
 .main__grid__container {
 	display: grid;
-	grid-template-rows: [presentation] 600px repeat(2, auto);
-	grid-template-columns: repeat(12, auto);
+	grid-template-rows: [presentation] 600px [products] auto [contact] auto;
+	grid-template-columns: repeat(12, calc(100% / 12));
 }
 
 .presentation {
-	grid-row: presentation / 2;
+	grid-row: presentation / products;
 	grid-column: 1 / 13;
 	background-image: url("../assets/img/presentation-banner.jpg");
 	background-repeat: no-repeat;
@@ -52,7 +52,7 @@ html {
 }
 
 .products {
-	grid-row: 2 / 3;
+	grid-row: products / contact;
 	grid-column: 1 / 13;
 	background-color: #EACFD5;
 	padding: 2rem 1rem 5rem 1rem;
@@ -108,8 +108,6 @@ html {
 }
 
 .footer {
-	grid-row: 3 / 4;
-	grid-column: 1 / 13;
 	text-align: center;
 	background-image: url("../assets/img/footer-banner.jpg");
 	background-repeat: no-repeat;
@@ -150,9 +148,7 @@ html {
 	}
 }
 
-@media screen
-	and (min-width: 781px)
-	and (max-width: 1050px) {
+@media screen and (min-width: 781px) and (max-width: 1050px) {
 	.products__list {
 		grid-template-columns: repeat(3, calc(85vw / 3));
 	}

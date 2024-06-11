@@ -38,40 +38,52 @@
 
 		<section class="contact">
 			<ul class="contact__links-list">
-				<li class="contact__links-list__item contact__links-list__item--maps">Google Maps</li>
-				<li class="contact__links-list__item contact__links-list__item--whats">WhatsApp</li>
-				<li class="contact__links-list__item contact__links-list__item--insta">Instagram</li>
-				<li class="contact__links-list__item contact__links-list__item--pinterest">Pinterest</li>
+				<li class="contact__links-list__item">
+					<img src="./assets/img/links/maps.svg" alt="" class="contact__links-list__item__bg">
+					Google Maps
+				</li>
+				<li class="contact__links-list__item">
+					<img src="./assets/img/links/whatsapp.svg" alt="" class="contact__links-list__item__bg">
+					WhatsApp
+				</li>
+				<li class="contact__links-list__item">
+					<img src="./assets/img/links/instagram.svg" alt="" class="contact__links-list__item__bg">
+					Instagram
+				</li>
+				<li class="contact__links-list__item">
+					<img src="./assets/img/links/pinterest.svg" alt="" class="contact__links-list__item__bg">
+					Pinterest
+				</li>
 			</ul>
 
-			<form action="" class="contact__form">
+			<form class="contact__form">
 				<legend class="contact__form__legend">Faça seu pedido preenchendo os campos abaixo:</legend>
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--name">
 					<label for="name" class="form__label">Nome</label>
-					<input type="text" class="form__input" id="name" placeholder="Digite seu nome">
+					<input type="text" class="form__input" id="name" placeholder="Digite seu nome" required>
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--phone">
 					<label for="phone" class="form__label">Telefone</label>
-					<input type="text" class="form__input" id="phone" placeholder="Um número de telefone para contato">
+					<input type="text" class="form__input" id="phone" placeholder="Um número de telefone para contato" required>
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset--address">
 					<div class="form__div form__div--cep">
 						<label for="cep" class="form__label">CEP</label>
-						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP">
+						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP" required>
 					</div>
 
 					<div class="form__div form__div--street">
 						<label for="street" class="form__label">Endereço</label>
-						<input type="text" class="form__input form__input--street" id="street"
+						<input type="text" class="form__input form__input--street" id="street" required
 							placeholder="Endereço para a entrega">
 					</div>
 
 					<div class="form__div form__div--district">
 						<label for="district" class="form__label">Bairro</label>
-						<input type="text" class="form__input" id="district" placeholder="Informe o bairro">
+						<input type="text" class="form__input" id="district" placeholder="Informe o bairro" required>
 					</div>
 
 					<div class="form__div form__div--number">
@@ -81,14 +93,14 @@
 
 					<div class="form__div form__div--city">
 						<label for="city" class="form__label">Cidade - UF</label>
-						<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF">
+						<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF" required>
 					</div>
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset contact__form__fieldset--order">
 					<label for="order" class="form__label"></label>
 					<textarea class="form__input" name="order" id="order" cols="30" rows="10"
-						placeholder="Digite aqui seu pedido..."></textarea>
+						placeholder="Digite aqui seu pedido..." required></textarea>
 				</fieldset>
 
 				<fieldset class="contact__form__fieldset--btn">
@@ -105,5 +117,6 @@
 
 <script src="./js/products.js"></script>
 <script src="./js/address.js"></script>
+<script src="./js/form.js"></script>
 
 </html>

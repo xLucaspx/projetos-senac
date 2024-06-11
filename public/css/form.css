@@ -1,9 +1,14 @@
 .contact {
+	grid-column: 1 / 13;
+	grid-row: contact / 4;
+	width: 100%;
+	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: [links] 33vw [form] 61vw;
+	grid-template-columns: [links] 30% [form] 60%;
 	grid-template-rows: 500px;
-	align-items: center;
 	align-self: center;
+	align-items: center;
+	justify-content: space-between;
 	margin: 0 auto;
 	gap: 50px;
 	padding: 2rem 20px 1rem;
@@ -18,12 +23,26 @@
 	gap: 2rem;
 }
 
+.contact__links-list__item {
+	font-size: 22px;
+	font-weight: 500;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.contact__links-list__item__bg {
+	width: 45px;
+	height: 45px;
+}
+
 .contact__form {
 	grid-column: form / form;
 	display: grid;
 	grid-template-columns: repeat(4, calc(750px / 4));
 	grid-template-rows: repeat(4, auto);
 	align-items: center;
+	justify-content: center;
 	gap: 0 20px;
 }
 
@@ -39,8 +58,7 @@
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
 	font-size: 20px;
-	text-align: center;
-	margin-bottom: 20px;
+	margin: 5px auto 20px;
 }
 
 .contact__form__fieldset--name {
@@ -111,4 +129,25 @@
 	width: 150px;
 	height: 40px;
 	font-size: 20px;
+	font-family: inherit;
+}
+
+@media screen and (max-width: 1020px) {
+	.contact {
+		grid-template-rows: [links] auto [form] auto;
+		/* grid-template-rows: [links] 200px [form] 515px; */
+		grid-template-columns: 100%;
+	}
+
+	.contact__links-list {
+		grid-column: 1 / 2;
+		grid-row: links / form;
+	}
+
+	.contact__form {
+		grid-column: 1 / 2;
+		grid-row:  form / form;
+		grid-template-columns: repeat(4, calc(100% / 4));
+		box-sizing: border-box;
+	}
 }
