@@ -1,0 +1,87 @@
+html {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+
+.logo {
+	display: inline;
+}
+
+.carousel-produtos {
+	width: 100%;
+	height: 30vh;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
+
+.bg-1 {
+	background-color: #1abc9c;
+	color: #fff;
+}
+
+.bg-2 {
+	background-color: #fff;
+	color: #552200;
+}
+
+.bg-3 {
+	background-color: #552200;
+	color: #fff;
+}
+
+.bg-graos {
+	background-image: url('../assets/graos.jpg');
+}
+
+.navbar,
+.container-fluid1 {
+	padding: 15px auto;
+	font-size: 12px;
+	letter-spacing: 5px;
+	background-color: #ffccaa;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+	transition: 0.25s ease-in-out;
+	color: #000;
+}
+
+.product-img {
+	width: 100%;
+}
+
+.card-produto {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container-fluid {
+	padding: 40px auto;
+}
+
+.container-fluid1 {
+	color: #000;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.footbar-link:hover,
+.footbar-link:active {
+	transition: 0.25s ease-in-out;
+	color: #000;
+	opacity: 0.7;
+}

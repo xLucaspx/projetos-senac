@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Literature Club</title>
+
+	<link rel="icon" href="./assets/books-icon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					Literature club
+					<img src="./assets/books-icon.svg" alt width="50" height="50">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#books">Livros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#map">Mapa</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div id="carousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="true">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+					aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active d-flex flex-row mb-3">
+					<img src="./assets/carousel/cervantes-quixote.jpg" class="carousel-img"
+						alt="O Engenhoso Cavaleiro D. Quixote de La Mancha, por Miguel de Cervantes">
+				</div>
+				<div class="carousel-item d-flex flex-row mb-3">
+					<img src="./assets/carousel/coimbra-historias.jpg" class="carousel-img"
+						alt="Histórias Bem Temperadas, por David Coimbra">
+				</div>
+				<div class="carousel-item d-flex flex-row mb-3">
+					<img src="./assets/carousel/martin-tormenta.jpg" class="carousel-img"
+						alt="A Tormenta de Espadas (Crônicas de Gelo e Fogo, livro 3), por George Martin">
+				</div>
+				<div class="carousel-item d-flex flex-row mb-3">
+					<img src="./assets/carousel/cortazar-autoestrada.jpg" class="carousel-img"
+						alt="A Autoestrada do Sul e outras histórias, por Júlio Cortázar">
+				</div>
+				<div class="carousel-item d-flex flex-row mb-3">
+					<img src="./assets/carousel/brookshear-cs.jpg" class="carousel-img"
+						alt="Computer Science: an Overview, por J. Glenn Brookshear">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div class="container-fluid d-flex flex-column col-md-12 bg">
+			<h2 class="text-center title" id="books">Livros do mês</h2>
+
+			<ul class="list">
+				<li class="card">
+					<img src="./assets/books/machado-casmurro.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">Dom Casmurro</h5>
+						<p class="card-text">Machado de Assis</p>
+						<p class="card-text">R$ 39,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/cervantes-quixote.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">O Engenhoso Fidalgo D. Quixote de La Mancha</h5>
+						<p class="card-text">Miguel de Cervantes Saavedra</p>
+						<p class="card-text">R$ 59,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/melville-moby.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">Moby Dick</h5>
+						<p class="card-text">Herman Melville</p>
+						<p class="card-text">R$ 72,00</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/cortazar-rayuela.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">Rayuela (O Jogo da Amarelinha)</h5>
+						<p class="card-text">Julio Cortázar</p>
+						<p class="card-text">R$ 74,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/stoker-dracula.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">Drácula</h5>
+						<p class="card-text">Bram Stoker</p>
+						<p class="card-text">R$ 49,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/verissimo-bage.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">O Analista de Bagé</h5>
+						<p class="card-text">Luís Fernando Veríssimo</p>
+						<p class="card-text">R$ 29,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+				<li class="card">
+					<img src="./assets/books/kerouac-road.jpg" class="card-img-top" alt>
+					<div class="card-body">
+						<h5 class="card-title">On the Road</h5>
+						<p class="card-text">Jack Kerouac</p>
+						<p class="card-text">R$ 32,90</p>
+						<a href="#" class="btn btn-primary">Adquirir</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<form class="d-flex flex-column justify-content-center form bg-body-tertiary w-100">
+			<legend>
+				<h2 class="text-center title" id="contact">Contato</h2>
+				<p class="text-center">Preencha o formulário para participar do clube e obter descontos nos livros!</p>
+			</legend>
+
+			<fieldset class="mb-3">
+				<label for="name" class="form-label">Seu nome</label>
+				<input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+			</fieldset>
+
+			<fieldset class="mb-3">
+				<label for="email" class="form-label">E-mail</label>
+				<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu e-mail"
+					required>
+				<div id="emailHelp" class="form-text">Nunca vamos compartilhar seu e-mail com ninguém!</div>
+			</fieldset>
+
+			<fieldset class="mb-3">
+				<label for="phone" class="form-label">Telefone</label>
+				<input type="tel" class="form-control" id="phone" placeholder="Digite seu telefone com DDD">
+				<div id="emailHelp" class="form-text">Preencha este campo se quiser receber as promoções no seu WhatsApp!</div>
+			</fieldset>
+
+			<fieldset class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="newsCheck">
+				<label class="form-check-label" for="newsCheck">Desejo receber a newsletter semanal no e-mail informado</label>
+			</fieldset>
+
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+
+		<div class="container-fluid col-md-12 map">
+			<div>
+				<h2 class="text-center title" id="map">Mapa</h2>
+				<p class="text-center map-text">Saiba onde nos encontrar!</p>
+			</div>
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13812.956240835076!2d-51.1733739!3d-30.0586813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977fdcda66153%3A0xf7fe98f74bd06e9b!2sBrother%20Jos%C3%A9%20Ot%C3%A3o%20Central%20Library!5e0!3m2!1sen!2sbr!4v1718715950282!5m2!1sen!2sbr"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+		</div>
+	</main>
+
+	<footer class="bg-body-tertiary">
+		<ul class="d-flex flex-wrap justify-content-center list">
+			<li><img src="./assets/links/instagram.svg" width="45" height="45"></li>
+			<li><img src="./assets/links/pinterest.svg" width="45" height="45"></li>
+			<li><img src="./assets/links/whatsapp.svg" width="45" height="45"></li>
+		</ul>
+	</footer>
+
+</body>
+
+</html>
