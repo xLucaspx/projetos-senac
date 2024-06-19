@@ -16,9 +16,9 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-	<header>
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+	<header id="home">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					Literature club
@@ -33,7 +33,7 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#books">Livros</a>
@@ -92,8 +92,8 @@
 			</button>
 		</div>
 
-		<div class="container-fluid d-flex flex-column col-md-12 bg">
-			<h2 class="text-center title" id="books">Livros do mês</h2>
+		<div class="container-fluid d-flex flex-column col-md-12 bg-body-tertiary" id="books">
+			<h2 class="text-center title">Livros do mês</h2>
 
 			<ul class="list">
 				<li class="card">
@@ -162,9 +162,9 @@
 			</ul>
 		</div>
 
-		<form class="d-flex flex-column justify-content-center form bg-body-tertiary w-100">
+		<form class="d-flex flex-column justify-content-center form w-100" id="contact">
 			<legend>
-				<h2 class="text-center title" id="contact">Contato</h2>
+				<h2 class="text-center title">Contato</h2>
 				<p class="text-center">Preencha o formulário para participar do clube e obter descontos nos livros!</p>
 			</legend>
 
@@ -183,20 +183,22 @@
 			<fieldset class="mb-3">
 				<label for="phone" class="form-label">Telefone</label>
 				<input type="tel" class="form-control" id="phone" placeholder="Digite seu telefone com DDD">
-				<div id="emailHelp" class="form-text">Preencha este campo se quiser receber as promoções no seu WhatsApp!</div>
+				<div id="emailHelp" class="form-text">Preencha este campo se quiser receber as promoções no seu
+					WhatsApp!</div>
 			</fieldset>
 
 			<fieldset class="mb-3 form-check">
 				<input type="checkbox" class="form-check-input" id="newsCheck">
-				<label class="form-check-label" for="newsCheck">Desejo receber a newsletter semanal no e-mail informado</label>
+				<label class="form-check-label" for="newsCheck">Desejo receber a newsletter semanal no e-mail
+					informado</label>
 			</fieldset>
 
 			<button type="submit" class="btn btn-primary">Enviar</button>
 		</form>
 
-		<div class="container-fluid col-md-12 map">
+		<section class="container-fluid col-md-12 map bg-body-secondary" id="map">
 			<div>
-				<h2 class="text-center title" id="map">Mapa</h2>
+				<h2 class="text-center title">Mapa</h2>
 				<p class="text-center map-text">Saiba onde nos encontrar!</p>
 			</div>
 
@@ -204,17 +206,17 @@
 				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13812.956240835076!2d-51.1733739!3d-30.0586813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977fdcda66153%3A0xf7fe98f74bd06e9b!2sBrother%20Jos%C3%A9%20Ot%C3%A3o%20Central%20Library!5e0!3m2!1sen!2sbr!4v1718715950282!5m2!1sen!2sbr"
 				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
-		</div>
+		</section>
 	</main>
 
-	<footer class="bg-body-tertiary">
-		<ul class="d-flex flex-wrap justify-content-center list">
+	<footer class="bg-body-tertiary footer">
+		<ul class="d-flex flex-wrap justify-content-center social-list">
 			<li><img src="./assets/links/instagram.svg" width="45" height="45"></li>
 			<li><img src="./assets/links/pinterest.svg" width="45" height="45"></li>
 			<li><img src="./assets/links/whatsapp.svg" width="45" height="45"></li>
 		</ul>
+
+		<p class="text-center">&copy; Senac Tech - 2024</p>
 	</footer>
-
 </body>
-
 </html>
