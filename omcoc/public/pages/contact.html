@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>One more... Coffee Shop and Book Store</title>
+
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
+
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<section class="contact">
+		<!-- TODO: adapt form (order form or contact form?) -->
+		<form class="contact__form">
+			<legend class="contact__form__legend">Faça seu pedido preenchendo os campos abaixo:</legend>
+
+			<fieldset class="contact__form__fieldset contact__form__fieldset--name">
+				<label for="name" class="form__label">Nome</label>
+				<input type="text" class="form__input" id="name" placeholder="Digite seu nome" required autocomplete="name"
+					minlength="3" maxlength="50">
+			</fieldset>
+
+			<fieldset class="contact__form__fieldset contact__form__fieldset--phone">
+				<label for="phone" class="form__label">Telefone</label>
+				<input type="tel" class="form__input" id="phone" placeholder="Um número de telefone para contato" required
+					autocomplete="tel" minlength="10" maxlength="25"
+					pattern="^[\(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[\)]? ?(?:[2-8]|9 ?[1-9])[0-9]{3}[\-]? ?[0-9]{4}$">
+			</fieldset>
+
+			<fieldset class="contact__form__fieldset--address">
+				<div class="form__div form__div--cep">
+					<label for="cep" class="form__label">CEP</label>
+					<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP" required
+						autocomplete="postal-code" minlength="8" maxlength="9" pattern="^[\d]{5}-?[\d]{3}$">
+				</div>
+
+				<div class="form__div form__div--street">
+					<label for="street" class="form__label">Endereço</label>
+					<input type="text" class="form__input form__input--street" id="street" placeholder="Endereço para a entrega"
+						required autocomplete="address-line1" minlength="5" maxlength="100">
+				</div>
+
+				<div class="form__div form__div--district">
+					<label for="district" class="form__label">Bairro</label>
+					<input type="text" class="form__input" id="district" placeholder="Informe o bairro" required
+						autocomplete="address-level3" minlength="3" maxlength="50">
+				</div>
+
+				<div class="form__div form__div--number">
+					<label for="number" class="form__label">Número</label>
+					<input type="text" class="form__input" id="number" placeholder="Digite o número" autocomplete="address-line2"
+						maxlength="15">
+				</div>
+
+				<div class="form__div form__div--city">
+					<label for="city" class="form__label">Cidade - UF</label>
+					<input type="text" class="form__input" id="city" placeholder="Informe cidade e UF" required
+						autocomplete="address-level2" minlength="3" maxlength="50">
+				</div>
+			</fieldset>
+
+			<fieldset class="contact__form__fieldset contact__form__fieldset--order">
+				<label for="order" class="form__label">Pedido</label>
+				<textarea class="form__input" name="order" id="order" cols="30" rows="10"
+					placeholder="Digite aqui seu pedido..." required></textarea>
+			</fieldset>
+
+			<fieldset class="contact__form__fieldset--btn">
+				<button class="form__button button--submit">Enviar</button>
+			</fieldset>
+		</form>
+	</section>
+</body>
+
+</html>

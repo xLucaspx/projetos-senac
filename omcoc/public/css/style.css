@@ -1,0 +1,33 @@
+/* TODO: define color pallette */
+:root {
+	/* Fonts */
+	--title_font: "Cinzel", serif;
+	--body_font: "Merriweather", serif;
+	--font_color: #4c4c4c;
+
+	/* Background colors */
+	--bg_silver: #e5e9f3;
+	--bg_platinum: #eaeaea;
+  --bg_md_gray: #efefef;
+  --bg_wk_gray: #f7f4f4;
+  --bg_white: #f7f7f7;
+
+	  /* Colors */
+		--blue: #009dda;
+		--dk_blue: #005eab;
+		--wk_gray: #f0f0f0;
+		--dk_gray: #3e3e3e;
+		--red: #de1010;
+		--dk_red: #920505;
+		--green: #10de10;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--title_font);
+	color: var(--font_color);
+	line-height: 1.5;
+}

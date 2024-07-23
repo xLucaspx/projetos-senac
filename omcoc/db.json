@@ -1,0 +1,132 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"title": "Dom Casmurro",
+			"author": "Machado de Assis",
+			"price": 49.9,
+			"imageUrl": "machado-casmurro.jpg"
+		},
+		{
+			"id": 2,
+			"title": "O Engenhoso Fidalgo D. Quixote de La Mancha",
+			"author": "Miguel de Cervantes",
+			"price": 69.9,
+			"imageUrl": "cervantes-quixote-i.jpg"
+		},
+		{
+			"id": 3,
+			"title": "O Engenhoso Cavaleiro D. Quixote de La Mancha",
+			"author": "Miguel de Cervantes",
+			"price": 69.9,
+			"imageUrl": "cervantes-quixote-ii.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Moby Dick",
+			"author": "Herman Melville",
+			"price": 72.00,
+			"imageUrl": "melville-moby.jpg"
+		},
+		{
+			"id": 5,
+			"title": "O Jogo da Amarelinha",
+			"author": "Julio Cortázar",
+			"price": 65,
+			"imageUrl": "cortazar-rayuela.jpg"
+		},
+		{
+			"id": 6,
+			"title": "A Autoestrada do Sul & outras histórias",
+			"author": "Julio Cortázar",
+			"price": 29.95,
+			"imageUrl": "cortazar-autoestrada.jpg"
+		},
+		{
+			"id": 7,
+			"title": "Dracula",
+			"author": "Bram Stoker",
+			"price": 42.7,
+			"imageUrl": "stoker-dracula.jpg"
+		},
+		{
+			"id": 8,
+			"title": "Histórias Bem Temperadas",
+			"author": "David Coimbra",
+			"price": 32,
+			"imageUrl": "coimbra-historias.jpg"
+		},
+		{
+			"id": 9,
+			"title": "Dracula",
+			"author": "Bram Stoker",
+			"price": 42.7,
+			"imageUrl": "stoker-dracula.jpg"
+		},
+		{
+			"id": 10,
+			"title": "On The Road",
+			"author": "Jack Kerouac",
+			"price": 30,
+			"imageUrl": "kerouac-road.jpg"
+		},
+		{
+			"id": 11,
+			"title": "Computer Science: An Overview",
+			"author": "J. Glenn Brookshear",
+			"price": 78,
+			"imageUrl": "brookshear-cs.jpg"
+		}
+	],
+	"coffees": [
+		{
+			"id": 1,
+			"product": "Expresso Italiano P",
+			"size": "200ml",
+			"price": 6.5,
+			"imageUrl": "expresso-p.webp"
+		},
+		{
+			"id": 2,
+			"product": "Expresso Italiano G",
+			"size": "450ml",
+			"price": 10.5,
+			"imageUrl": "expresso-g.avif"
+		},
+		{
+			"id": 3,
+			"product": "Pingado",
+			"size": "300ml",
+			"price": 6,
+			"imageUrl": "pingado.jpg"
+		},
+		{
+			"id": 4,
+			"product": "Café com Leite P",
+			"size": "250ml",
+			"price": 5,
+			"imageUrl": "latte-p.jpg"
+		},
+		{
+			"id": 5,
+			"product": "Café com Leite G",
+			"size": "450ml",
+			"price": 7.5,
+			"imageUrl": "latte-g.jpg"
+		},
+		{
+			"id": 6,
+			"product": "Irish Coffee",
+			"size": "475ml",
+			"price": 10.9,
+			"imageUrl": "irish.avif"
+		},
+		{
+			"id": 7,
+			"product": "Café Passado",
+			"size": "400ml",
+			"price": 5.5,
+			"imageUrl": "passado.webp"
+		}
+	]
+}
