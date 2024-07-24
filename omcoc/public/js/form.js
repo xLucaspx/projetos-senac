@@ -1,7 +1,7 @@
 (() => {
-	let orderNumber = 1;
-
 	const nameInput = document.getElementById('name');
+	const birthInput = document.getElementById('birth');
+	const emailInput = document.getElementById('email');
 	const phoneInput = document.getElementById('phone');
 	const cepInput = document.getElementById('cep');
 	const streetInput = document.getElementById('street');
@@ -16,6 +16,8 @@
 		event.preventDefault();
 
 		const name = nameInput.value;
+		const [year, month, day] = birthInput.value.split('-');
+		const email = emailInput.value;
 		const phone = phoneInput.value;
 		const cep = cepInput.value;
 		const street = streetInput.value;
@@ -24,22 +26,32 @@
 		const city = cityInput.value;
 		const justification = justificationInput.value;
 
-		const output = `*** Pedido ${orderNumber} ***
+		const output = `--- Comprovante de inscrição ---
         
-- Dados do cliente -
+- Dados pessoais -
 	Nome: ${name}
+	Data de nascimento: ${day}/${month}/${year}
+	Endereço: ${street}, ${number ? number : 'S/Nº'}, Bairro ${district}, ${city}. CEP ${cep}
+
+- Informações de contato -
+	E-mail: <${email}>
 	Telefone: ${phone}
 
-- Endereço de entrega -
-	${street}, ${number ? number : 'S/Nº'}, Bairro ${district}, ${city}. CEP ${cep}
+- Justificativa -
+	${justification}
 
-- Pedido -
-	${justification.replaceAll('\n', '\n	')}
+---
+
+Este é apenas o comprovante de inscrição, documento que comprova que recebemos sua solicitação de associação ao clube.
+Iremos avaliar as informações e posteriormente entraremos em contato para dar seguimento ao processo, conforme estipulado nas regras do estatuto.
+
+Em caso de dúvidas, por favor nos contate em <ajuda-onemore@email.com>.
+
+One more... Coffee Shop and Book Store
 `;
 
-
 		const link = document.createElement('a');
-		link.setAttribute('download', `pedido_${orderNumber}.txt`);
+		link.setAttribute('download', `comprovante-inscricao.txt`);
 
 		const data = new Blob([output], { type: 'text/plain' });
 		const fileUrl = window.URL.createObjectURL(data);
@@ -53,6 +65,17 @@
 			document.body.removeChild(link);
 		});
 
-		orderNumber++;
+		alert("Inscrição realizada com sucesso, verifique seu comprovante para maiores informações!\n");
+
+		nameInput.value = "";
+		birthInput.value = "";
+		emailInput.value = "";
+		phoneInput.value = "";
+		cepInput.value = "";
+		streetInput.value = "";
+		districtInput.value = "";
+		numberInput.value = "";
+		cityInput.value = "";
+		justificationInput.value = "";
 	}
 })();

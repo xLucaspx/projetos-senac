@@ -9,6 +9,7 @@
 
 	<title>One more... Coffee Shop and Book Store</title>
 
+	<link rel="icon" type="image/png" href="../assets/img/icon.png">
 	<link rel="stylesheet" href="../css/reset.css">
 
 
@@ -45,6 +46,8 @@
 		<section class="information container">
 			<h2 class="title information__title">Formulário de inscrição</h2>
 
+			<div class="information__div">
+			<div>
 			<p class="information__text">Torne-se membro do nosso clube e adquira inúmeras vantagens, como por exemplo:</p>
 
 			<ol class="information__list">
@@ -55,6 +58,46 @@
 				</li>
 				<li class="information__list__item">Participe de eventos exclusivos com autores convidados e outros membros</li>
 			</ol>
+		</div>
+
+		<table class="information__table">
+			<caption class="information__table__caption">Custo de associação</caption>
+			<thead class="information__table__thead">
+				<tr class="information__table__row">
+					<th class="information__table__header">Período</th>
+					<th class="information__table__header">Parcelas</th>
+					<th class="information__table__header">À vista</th>
+				</tr>
+			</thead>
+			<tbody class="information__table__tbody">
+				<tr class="information__table__row">
+					<td class="information__table__data">3 meses</td>
+					<td class="information__table__data">3 x R$ 89,90</td>
+					<td class="information__table__data">R$ 265,00</td> <!-- - 4,70 -->
+				</tr>
+				<tr class="information__table__row">
+					<td class="information__table__data">6 meses</td>
+					<td class="information__table__data">6 x R$ 82,70</td>
+					<td class="information__table__data">R$ 490,00</td> <!-- - 6,20 -->
+				</tr>
+				<tr class="information__table__row">
+					<td class="information__table__data">12 meses</td>
+					<td class="information__table__data">12 x R$ 72,45</td>
+					<td class="information__table__data">R$ 860,00</td> <!-- - 9,40 -->
+				</tr>
+				<tr class="information__table__row">
+					<td class="information__table__data">18 meses</td>
+					<td class="information__table__data">18 x R$ 62,85</td>
+					<td class="information__table__data">R$ 1120,00</td> <!-- - 11,30 -->
+				</tr>
+				<tr class="information__table__row">
+					<td class="information__table__data">24 meses</td>
+					<td class="information__table__data">24 x R$ 59,90</td>
+					<td class="information__table__data">R$ 1420,00</td> <!-- - 17,60 -->
+				</tr>
+			</tbody>
+		</table>
+	</div>
 		</section>
 
 		<section class="subscribe container">
@@ -85,7 +128,7 @@
 					<label for="phone" class="form__label">Telefone</label>
 					<input type="tel" class="form__input" id="phone" placeholder="Um número de telefone para contato" required
 						autocomplete="tel" minlength="10" maxlength="25"
-						pattern="^[\(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[\)]? ?(?:[2-8]|9 ?[1-9])[0-9]{3}[\-]? ?[0-9]{4}$">
+						pattern="^[\(]?\+?55?[\)]? ?[\(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[\)]? ?(?:[2-8]|9 ?[1-9])[0-9]{3}[\-]? ?[0-9]{4}$">
 				</fieldset>
 
 				<fieldset class="subscribe__form__fieldset--address"

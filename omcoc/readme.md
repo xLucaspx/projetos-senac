@@ -1,7 +1,7 @@
 Elaborar um _site_ com no mínimo 4 (quatro) páginas internas, contendo:
 
 - [x] Imagens;
-- [ ] Tabelas;
+- [x] Tabelas;
 - [x] Formulário;
 - [x] Listas ordenadas;
 - [x] Listas não ordenadas;
@@ -14,5 +14,3 @@ Apresentação na _quinta-feira 25/07_!
 
 Tema livre.
 
-TO DO:
-- Membership table (period / price);

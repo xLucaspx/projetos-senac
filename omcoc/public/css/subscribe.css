@@ -1,8 +1,14 @@
 .information {
 	background-color: var(--bg_md_gray);
+}
+
+.information__title {
+	text-align: center;
+}
+
+.information__div {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -13,8 +19,49 @@
 .information__list {
 	list-style-type: upper-roman;
 	text-indent: 1rem;
+	margin-left: 2rem;
 }
 
 .information__list__item::marker {
 	color: var(--caramel);
+}
+
+.information__table,
+.information__table__row {
+	border: 2px groove var(--caramel);
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.information__table__caption {
+	font-family: var(--title_font);
+	font-weight: 700;
+	font-size: 18px;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.information__table__header,
+.information__table__data {
+	padding: 0.5em 1em;
+}
+
+.information__table__header {
+	font-weight: 600;
+	background-color: var(--bg_silver);
+}
+
+.information__table__row:nth-child(odd) {
+background-color: var(--bg_white);
+}
+
+.information__table__row:nth-child(even) {
+	background-color: var(--bg_platinum);
+}
+
+@media screen and (max-width: 1195px) {
+	.information__div {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
 }
