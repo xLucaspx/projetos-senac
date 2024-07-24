@@ -11,14 +11,64 @@
 
 	<link rel="stylesheet" href="../css/reset.css">
 
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
 
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+
+	<link rel="stylesheet" href="../css/products.css">
 </head>
 
-<body></body>
+<body>
+	<header class="header">
+		<a href="../index.html" title="Home" class="logo__link"><h1 class="title">One more...</h1></a>
 
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__list__item"><a href="../index.html#about" class="link">Sobre nós</a></li>
+				<li class="nav__list__item"><a href="./coffee.html" class="link">Cafés</a></li>
+				<li class="nav__list__item"><a href="./books.html" class="link">Livros</a></li>
+				<li class="nav__list__item"><a href="./contact.html" class="link">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container products">
+			<h2 class="title products__title">Cafés</h2>
+
+			<ul class="products__list"></ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<ul class="footer__links-list">
+			<li class="footer__links-list__item">
+				<img src="../assets/img/links/maps.svg" alt width="45" height="45" class="footer__links-list__item__img">
+				Google Maps
+			</li>
+			<li class="footer__links-list__item">
+				<img src="../assets/img/links/whatsapp.svg" alt width="45" height="45" class="footer__links-list__item__img">
+				WhatsApp
+			</li>
+			<li class="footer__links-list__item">
+				<img src="../assets/img/links/instagram.svg" alt width="45" height="45" class="footer__links-list__item__img">
+				Instagram
+			</li>
+			<li class="footer__links-list__item">
+				<img src="../assets/img/links/pinterest.svg" alt width="45" height="45" class="footer__links-list__item__img">
+				Pinterest
+			</li>
+		</ul>
+
+		<p class="footer__text">&copy; One more... by Lucaspx | July 2024</p>
+	</footer>
+</body>
+
+<script src="../js/coffees.js"></script>
 </html>

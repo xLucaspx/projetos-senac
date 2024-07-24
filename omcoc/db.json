@@ -9,14 +9,14 @@
 		},
 		{
 			"id": 2,
-			"title": "O Engenhoso Fidalgo D. Quixote de La Mancha",
+			"title": "O Engenhoso Fidalgo D. Quixote de La Mancha: D. Quixote livro I",
 			"author": "Miguel de Cervantes",
 			"price": 69.9,
 			"imageUrl": "cervantes-quixote-i.jpg"
 		},
 		{
 			"id": 3,
-			"title": "O Engenhoso Cavaleiro D. Quixote de La Mancha",
+			"title": "O Engenhoso Cavaleiro D. Quixote de La Mancha: D. Quixote livro II",
 			"author": "Miguel de Cervantes",
 			"price": 69.9,
 			"imageUrl": "cervantes-quixote-ii.jpg"
@@ -58,10 +58,10 @@
 		},
 		{
 			"id": 9,
-			"title": "Dracula",
-			"author": "Bram Stoker",
-			"price": 42.7,
-			"imageUrl": "stoker-dracula.jpg"
+			"title": "A Tormenta de Espadas: As Crônicas de Gelo e Fogo livro III",
+			"author": "George R. R. Martin",
+			"price": 52.3,
+			"imageUrl": "martin-tormenta.jpg"
 		},
 		{
 			"id": 10,

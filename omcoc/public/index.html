@@ -9,57 +9,110 @@
 
 	<title>One more... Coffee Shop and Book Store</title>
 
-	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="./css/reset.css">
+
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
 
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+
+	<link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 	<header class="header">
-		<div class="banner">
-			<h1 class="banner__title">One more...</h1>
-		</div>
+		<a href="#" title="Home" class="logo__link"><h1 class="title">One more...</h1></a>
 
-		<!-- nav bar (about coffees books contact) -->
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__list__item"><a href="#about" class="link">Sobre nós</a></li>
+				<li class="nav__list__item"><a href="./pages/coffee.html" class="link">Cafés</a></li>
+				<li class="nav__list__item"><a href="./pages/books.html" class="link">Livros</a></li>
+				<li class="nav__list__item"><a href="./pages/contact.html" class="link">Contato</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<main class="main__grid__container">
-		<section class="presentation">
-			<h2 class="presentation__title">Coffee Shop & Book Store</h2>
+	<main>
+		<section class="presentation container">
+			<h2 class="title presentation__title">Coffee Shop & Book Store</h2>
 
 			<ul class="presentation__list">
-				<li class="presentation__list__item"><a href="./pages/coffee.html" class="button">One more cup of coffee</a>
+				<li class="presentation__list__item"><a href="./pages/coffee.html" class="button button--secondary">One more cup
+						of coffee</a>
 				</li>
-				<li class="presentation__list__item"><a href="./pages/books.html" class="button">One more book</a></li>
+				<li class="presentation__list__item"><a href="./pages/books.html" class="button button--primary">One more
+						book</a></li>
 			</ul>
 		</section>
 
-		<section class="about">
-			<!-- text and images about (lyrics from omcoc) -->
+		<section class="about container" id="about">
+			<h2 class="subtitle about__title">Sobre nós</h2>
+
+			<div class="about__div">
+				<div class="about__div--text">
+					<p class="about__text">
+						Your breath is sweet, your eyes are like two jewels in the sky<br>
+						Your back is straight, your hair is smooth on the pillow where you lie<br>
+						But I don't sense affection, no gratitude or love<br>
+						Your loyalty is not to me but to the stars above<br>
+					</p>
+					<p class="about__text">
+						One more cup of coffee for the road<br>
+						One more cup of coffee 'fore I go<br>
+						To the valley below<br>
+					</p>
+					<p class="about__text">
+						Your daddy, he's an outlaw and a wanderer by trade<br>
+						He'll teach you how to pick and choose, and how to throw the blade<br>
+						He oversees his kingdom, so no stranger does intrude<br>
+						His voice, it trembles as he calls out for another plate of food<br>
+					</p>
+					<p class="about__text">
+						One more cup of coffee for the road<br>
+						One more cup of coffee 'fore I go<br>
+						To the valley below<br>
+					</p>
+					<p class="about__text">
+						Your sister sees the future like your mama and yourself<br>
+						You've never learned to read or write, there's no books upon your shelf<br>
+						And your pleasure knows no limits, your voice is like a meadow lark<br>
+						But your heart is like an ocean, mysterious and dark<br>
+					</p>
+					<p class="about__text">
+						One more cup of coffee for the road<br>
+						One more cup of coffee 'fore I go<br>
+						To the valley below<br>
+					</p>
+					<p class="about__text">&copy; Bob Dylan, Desire, Janeiro de 1976</p>
+				</div>
+
+				<img src="./assets/img/index/about.jpg" alt class="about__img">
+			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<ul class="contact__links-list">
-			<li class="contact__links-list__item">
-				<img src="./assets/img/links/maps.svg" alt="" class="contact__links-list__item__bg">
+		<ul class="footer__links-list">
+			<li class="footer__links-list__item">
+				<img src="./assets/img/links/maps.svg" alt width="45" height="45" class="footer__links-list__item__img">
 				Google Maps
 			</li>
-			<li class="contact__links-list__item">
-				<img src="./assets/img/links/whatsapp.svg" alt="" class="contact__links-list__item__bg">
+			<li class="footer__links-list__item">
+				<img src="./assets/img/links/whatsapp.svg" alt width="45" height="45" class="footer__links-list__item__img">
 				WhatsApp
 			</li>
-			<li class="contact__links-list__item">
-				<img src="./assets/img/links/instagram.svg" alt="" class="contact__links-list__item__bg">
+			<li class="footer__links-list__item">
+				<img src="./assets/img/links/instagram.svg" alt width="45" height="45" class="footer__links-list__item__img">
 				Instagram
 			</li>
-			<li class="contact__links-list__item">
-				<img src="./assets/img/links/pinterest.svg" alt="" class="contact__links-list__item__bg">
+			<li class="footer__links-list__item">
+				<img src="./assets/img/links/pinterest.svg" alt width="45" height="45" class="footer__links-list__item__img">
 				Pinterest
 			</li>
 		</ul>
@@ -67,10 +120,5 @@
 		<p class="footer__text">&copy; One more... by Lucaspx | July 2024</p>
 	</footer>
 </body>
-
-<script src="./js/books.js"></script>
-<script src="./js/coffees.js"></script>
-<!-- <script src="./js/address.js"></script> -->
-<!-- <script src="./js/form.js"></script> -->
 
 </html>

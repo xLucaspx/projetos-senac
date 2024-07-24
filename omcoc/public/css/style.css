@@ -3,23 +3,26 @@
 	/* Fonts */
 	--title_font: "Cinzel", serif;
 	--body_font: "Merriweather", serif;
-	--font_color: #4c4c4c;
+	--font_color: #492000;
 
 	/* Background colors */
 	--bg_silver: #e5e9f3;
 	--bg_platinum: #eaeaea;
-  --bg_md_gray: #efefef;
-  --bg_wk_gray: #f7f4f4;
-  --bg_white: #f7f7f7;
+	--bg_md_gray: #efefef;
+	--bg_wk_gray: #f7f4f4;
+	--bg_white: #f7f7f7;
 
-	  /* Colors */
-		--blue: #009dda;
-		--dk_blue: #005eab;
-		--wk_gray: #f0f0f0;
-		--dk_gray: #3e3e3e;
-		--red: #de1010;
-		--dk_red: #920505;
-		--green: #10de10;
+	/* Colors */
+	--blue: #009dda;
+	--dk_blue: #005eab;
+	--wk_gray: #f0f0f0;
+	--md_gray: #4c4c4c;
+	--dk_gray: #3e3e3e;
+	--caramel: #85461e;
+	--dk_caramel: #492000;
+	--red: #de1010;
+	--dk_red: #920505;
+	--green: #10de10;
 }
 
 html {
@@ -27,7 +30,91 @@ html {
 }
 
 body {
-	font-family: var(--title_font);
+	font-family: var(--body_font);
 	color: var(--font_color);
 	line-height: 1.5;
+}
+
+.container {
+	padding: 3.5rem 5% 2.5rem;
+}
+
+.title,
+.subtitle {
+	font-family: var(--title_font);
+	margin-bottom: 2.5rem;
+}
+
+.title {
+	font-size: 42px;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.link {
+	color: var(--caramel);
+	outline: none;
+	border-bottom: 1px solid transparent;
+	transform: 0.5s ease-out;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+	filter: brightness(90%);
+	color: var(--dk_caramel);
+	border-color: var(--dk_caramel);
+}
+
+.button {
+	display: block;
+	width: 22rem;
+	height: 3.2rem;
+	padding: 0.75rem 2rem;
+	box-sizing: border-box;
+	font-family: var(--title_font);
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 7px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition: 0.45s ease-out;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+	box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.45);
+}
+
+.button--primary {
+	color: #fff;
+	background-color: var(--blue);
+	border: 1px solid var(--blue);
+}
+
+.button--primary:hover,
+.button--primary:focus,
+.button--primary:active {
+	background-color: var(--dk_blue);
+	border-color: var(--dk_blue);
+}
+
+.button--secondary {
+	color: #fff;
+	background-color: var(--caramel);
+	border: 1px solid var(--caramel);
+}
+
+.button--secondary:hover,
+.button--secondary:focus,
+.button--secondary:active {
+	background-color: var(--dk_caramel);
+	border-color: var(--dk_caramel);
 }
