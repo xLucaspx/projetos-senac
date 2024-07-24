@@ -8,9 +8,9 @@
 	const districtInput = document.getElementById('district');
 	const numberInput = document.getElementById('number');
 	const cityInput = document.getElementById('city');
-	const orderInput = document.getElementById('order');
+	const justificationInput = document.getElementById('justification');
 
-	const form = document.querySelector('.contact__form');
+	const form = document.querySelector('.subscribe__form');
 
 	form.onsubmit = (event) => {
 		event.preventDefault();
@@ -22,7 +22,7 @@
 		const district = districtInput.value;
 		const number = numberInput.value;
 		const city = cityInput.value;
-		const order = orderInput.value;
+		const justification = justificationInput.value;
 
 		const output = `*** Pedido ${orderNumber} ***
         
@@ -34,7 +34,7 @@
 	${street}, ${number ? number : 'S/Nº'}, Bairro ${district}, ${city}. CEP ${cep}
 
 - Pedido -
-	${order.replaceAll('\n', '\n	')}
+	${justification.replaceAll('\n', '\n	')}
 `;
 
 

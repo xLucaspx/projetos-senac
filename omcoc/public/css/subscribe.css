@@ -1,0 +1,20 @@
+.information {
+	background-color: var(--bg_md_gray);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.information__text {
+	margin-bottom: 2rem;
+}
+
+.information__list {
+	list-style-type: upper-roman;
+	text-indent: 1rem;
+}
+
+.information__list__item::marker {
+	color: var(--caramel);
+}

@@ -21,13 +21,14 @@
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/footer.css">
 
+	<link rel="stylesheet" href="../css/subscribe.css">
 	<link rel="stylesheet" href="../css/form.css">
 </head>
 
 <body>
 	<header class="header">
-		<a href="../index.html" title="Home" class="logo__link">
-			<h1 class="title">One more...</h1>
+		<a href="../index.html" title="Home" class="title logo__link">
+			<h1>One more...</h1>
 		</a>
 
 		<nav class="nav">
@@ -35,36 +36,60 @@
 				<li class="nav__list__item"><a href="../index.html#about" class="link">Sobre nós</a></li>
 				<li class="nav__list__item"><a href="./coffee.html" class="link">Cafés</a></li>
 				<li class="nav__list__item"><a href="./books.html" class="link">Livros</a></li>
-				<li class="nav__list__item"><a href="./contact.html" class="link">Contato</a></li>
+				<li class="nav__list__item"><a href="./subscribe.html" class="link link--active">Participe</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
 		<section class="information container">
-			<h2 class="title information__title">Formulário de contato</h2>
-			<!-- TODO: explain contact form -->
+			<h2 class="title information__title">Formulário de inscrição</h2>
+
+			<p class="information__text">Torne-se membro do nosso clube e adquira inúmeras vantagens, como por exemplo:</p>
+
+			<ol class="information__list">
+				<li class="information__list__item">Ganhe descontos em cafés e livros</li>
+				<li class="information__list__item">Seja avisado de eventos e promoções no seu telefone</li>
+				<li class="information__list__item">Receba a nossa <em>newsletter</em> semanal em seu e-mail</li>
+				<li class="information__list__item">Concorra a brindes mensalmente (ao menos 5 livros são sorteados por mês)
+				</li>
+				<li class="information__list__item">Participe de eventos exclusivos com autores convidados e outros membros</li>
+			</ol>
 		</section>
 
-		<section class="contact container">
-			<!-- TODO: adapt form (order form or contact form?) -->
-			<form class="contact__form">
-				<legend class="contact__form__legend">Faça seu pedido preenchendo os campos abaixo:</legend>
+		<section class="subscribe container">
+			<form class="subscribe__form">
+				<legend class="subscribe__form__legend">Faça sua solicitação de participação no clube preenchendo os campos
+					abaixo:</legend>
 
-				<fieldset class="contact__form__fieldset contact__form__fieldset--name">
+				<fieldset class="subscribe__form__fieldset subscribe__form__fieldset--name">
 					<label for="name" class="form__label">Nome</label>
 					<input type="text" class="form__input" id="name" placeholder="Digite seu nome" required autocomplete="name"
 						minlength="3" maxlength="50">
 				</fieldset>
 
-				<fieldset class="contact__form__fieldset contact__form__fieldset--phone">
+				<fieldset class="subscribe__form__fieldset subscribe__form__fieldset--birth"
+					title="Sua data de nascimento é utilizada para envio personalizado de promoções e brindes">
+					<label for="birth" class="form__label">Data de nascimento</label>
+					<input type="date" class="form__input" id="birth" name="birth" required autocomplete="bday">
+				</fieldset>
+
+				<fieldset class="subscribe__form__fieldset subscribe__form__fieldset--email">
+					<label for="email" class="form__label">E-mail</label>
+					<input type="email" class="form__input" id="email" name="email" placeholder="Digite seu email" required
+						autocomplete="email" maxlength="50" pattern="^\w+([\.\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,3})+$">
+				</fieldset>
+
+				<fieldset class="subscribe__form__fieldset subscribe__form__fieldset--phone"
+					title="Seu número de telefone será utilizado para comunicação de eventos e promoções por mensagens de texto">
 					<label for="phone" class="form__label">Telefone</label>
 					<input type="tel" class="form__input" id="phone" placeholder="Um número de telefone para contato" required
 						autocomplete="tel" minlength="10" maxlength="25"
 						pattern="^[\(]?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])[\)]? ?(?:[2-8]|9 ?[1-9])[0-9]{3}[\-]? ?[0-9]{4}$">
 				</fieldset>
 
-				<fieldset class="contact__form__fieldset--address">
+				<fieldset class="subscribe__form__fieldset--address"
+					title="Seu endereço será utilizado para corrêspondência promocional e envio de brindes/pedidos">
 					<div class="form__div form__div--cep">
 						<label for="cep" class="form__label">CEP</label>
 						<input type="text" class="form__input form__input--cep" id="cep" placeholder="Informe seu CEP" required
@@ -96,13 +121,14 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="contact__form__fieldset contact__form__fieldset--order">
-					<label for="order" class="form__label">Pedido</label>
-					<textarea class="form__input form__textarea" name="order" id="order" cols="30" rows="10"
-						placeholder="Digite aqui seu pedido..." required></textarea>
+				<fieldset class="subscribe__form__fieldset subscribe__form__fieldset--justification"
+					title="Escreva uma breve justificativa, apresentando-se e informando os motivos pelos quais deseja associar-se ao clube">
+					<label for="justification" class="form__label">Justificativa</label>
+					<textarea class="form__input form__textarea" name="justification" id="justification" cols="30" rows="10"
+						placeholder="Por que deseja se associar ao clube?" required></textarea>
 				</fieldset>
 
-				<fieldset class="contact__form__fieldset--btn">
+				<fieldset class="subscribe__form__fieldset--btn">
 					<button class="form__button button button--primary">Enviar</button>
 				</fieldset>
 			</form>
@@ -135,4 +161,5 @@
 
 <script src="../js/address.js"></script>
 <script src="../js/form.js"></script>
+
 </html>

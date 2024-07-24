@@ -59,7 +59,7 @@ body {
 	color: var(--caramel);
 	outline: none;
 	border-bottom: 1px solid transparent;
-	transform: 0.5s ease-out;
+	transition: 0.5s ease-out;
 }
 
 .link:hover,
@@ -68,6 +68,11 @@ body {
 	filter: brightness(90%);
 	color: var(--dk_caramel);
 	border-color: var(--dk_caramel);
+}
+
+.link--active {
+	color: var(--blue);
+	border-color: var(--dk_blue);
 }
 
 .button {

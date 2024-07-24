@@ -5,10 +5,21 @@
 	padding: 15px 2.5rem;
 }
 
+.logo__link {
+	margin: 0;
+}
+
+.logo__link:hover,
+.logo__link:focus,
+.logo__link:active {
+	transition: 0.5s ease-out;
+	filter: brightness(90%);
+	color: var(--caramel);
+}
+
 .nav__list {
 	display: flex;
 	gap: 1rem;
-	margin-bottom: 2.5rem;
 }
 
 .nav__list__item {
